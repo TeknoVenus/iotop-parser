@@ -118,37 +118,6 @@ def parse_results(filepath):
         fig.set_figwidth(15)
         fig.savefig(f"./output/{filename}.png", dpi=300)
 
-    # # Re-organise dict based on process
-    # process_data = {}
-
-    # for timestamp in results:
-    #     data = results[timestamp]
-
-    #     for entry in data:
-    #         if not process_data.get(entry['command']):
-    #             process_data[entry['command']] = {}
-
-    #         process_data[entry['command']][timestamp] = entry
-
-    # # Create plots
-    # fig, ax = plt.subplots()
-
-    # timestamps = list(process_data['syslog-ng'])
-
-    # data_points = []
-    # for timestamp in timestamps:
-    #     data_points.append(process_data['syslog-ng'][timestamp])
-
-    # ax.plot(timestamps, [d['disk_write_kbps'] for d in data_points], label = 'Disk Write')
-    # ax.plot(timestamps, [d['disk_read_kbps'] for d in data_points], label = 'Disk Read')
-
-    # ax.set(xlabel='Timestamp', ylabel='KB/s',
-    #    title='syslog-ng')
-    # ax.legend()
-    # ax.grid()
-
-    # plt.show()
-
     return {}
 
 
