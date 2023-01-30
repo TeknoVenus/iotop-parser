@@ -24,3 +24,5 @@ The resulting graphs will have two Y axis:
 
 * The left axis shows how much data the process is reading/writing in KB/s
 * The right axis shows the amount of time (%) the process is delayed waiting for IO to complete or waiting for page fault I/O (swapping data in)
+
+iotop reads this data over netlink using the taskstats interface, see https://www.kernel.org/doc/Documentation/accounting/taskstats.txt and https://docs.kernel.org/accounting/taskstats-struct.html for more details
